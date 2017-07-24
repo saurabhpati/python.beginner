@@ -21,3 +21,5 @@ random.shuffle(pristineSuite);
 print('shuffled suite', pristineSuite);
 
 # uniform(x, y) generates a float value >= x and < y
+print(random.uniform(5, 10));
+print(random.uniform(7, 14));
