@@ -1,0 +1,14 @@
+Here is the list of all Format Strings.
+
+%c ---- Character
+%s ---- String
+%i ---- Signed decimal integer
+%d ---- Signed decimal integer
+%u ---- Unsigned decimal integer
+%o ---- Octal integer
+%x ---- Hexadecimal integer (lower case) 
+%e ---- exponential notation (for lower case e)
+%E ---- exponentail notation (for upper case E)
+%f ---- floating point real number
+%g ---- The shorter of %f and %e
+%G ---- the shorter of %f and %E
