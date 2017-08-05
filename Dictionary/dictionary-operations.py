@@ -33,3 +33,45 @@ print(str(fruitDictionary));
 
 print(type(fruitDictionary)); #Output: <class 'dict'>
 print(type(fruitDictionary['king'])); #Ouput: <class 'str'>
+
+fruitList = ['mango', 'apple', 'banana'];
+
+# fromkeys takes in a list and converts it to a dictionary of keys with value as None.
+# the value be set can also be provided, all values will be set to that value.
+print(fruitDictionary.fromkeys(fruitList));
+# Output: {'mango': None, 'apple': None, 'banana': None}
+
+# This will set the value of all keys to the value provided.
+print(fruitDictionary.fromkeys(fruitList, 'sweet'));
+# Output: {'mango': 'sweet', 'apple': 'sweet', 'banana': 'sweet'}
+
+# get will return the value of the key, If not found, will return None.
+print(fruitDictionary.get('sepoy'));
+print(fruitDictionary.get('minister'));
+
+# items will return the list of key value tuple pairs.
+print(fruitDictionary.items());
+itemList = fruitDictionary.items();
+
+# Item list is a list of tuples with first value being the key and second value being the value.
+# item on each iteraton will be the key value pair tuple.
+for item in itemList:
+    print(item[0] + '--' + item[1]); # item[0] --> key
+                                     # item[1] --> value
+
+# update will add the key value pairs in fruitcabinet to fruit dictionary.
+# if any key of cabinet is present already in fruit dictionary, then it will not update that 
+# key value pair.
+fruitCabinet = {
+    'Prime': 'Grape',
+    'Defence': 'Lemon',
+    'Foreign': 'Kiwi'
+}
+ 
+fruitDictionary.update(fruitCabinet);
+print(fruitDictionary);
+# Output: {'king': 'Watermelon', 'secondInCommand': 'Orange', 'leutinant': 'apple', 'sepoy': 'banana', 'noble': 'pear', 'King': 'Mango', 'Pr
+# ime': 'Grape', 'Defence': 'Lemon', 'Foreign': 'Kiwi'}
+
+# values will return a list of values.
+print(fruitDictionary.values());
