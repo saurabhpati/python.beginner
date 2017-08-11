@@ -9,7 +9,6 @@ def subtract(*tupleinput):
     tupleinput = tupleinput[1:];
     for item in tupleinput:
         total -= item;
-
     return total;
 
 def multiply(*tupleinput):
@@ -17,9 +16,14 @@ def multiply(*tupleinput):
     total = 1;
     for item in tupleinput:
         total *= item;
-
     return total;
 
 def divide(dividend, divisor):
     "returns dividend/divisor i.e. input1/input2."
     return dividend/divisor;
+
+def raiseToPower(inputValue, power):
+    "Returns input raised to the power of power."
+    if type(inputValue) != int or type(power) != int:
+        return 'Please provide integer inputs';
+    return inputValue ** power;
