@@ -1,6 +1,6 @@
 from employee import Employee; # importing the Employee class from employee module.
 
-emp = Employee('Saurabh', 44444); # initializing the class by calling the constructor.
+emp = Employee(1, 'Saurabh', 44444); # initializing the class by calling the constructor.
 emp.printEmployee(); # calling the print employee method on emp object;
 
 print(hasattr(emp, 'name')); # Output: True since 'name' attribute is present on the employee.
